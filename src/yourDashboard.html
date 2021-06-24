@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/yourDashboard.css" />
+    <!--  -->
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Material Design Bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.8/css/mdb.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="delete-many"> 
+        <input type="button" class="btn-danger" value="Delete Many" onclick="delMany()" />
+        <input type="button" class="btn-danger" value="Delete All" onclick="deleteAll()" />
+      </div>
+      <table
+        id="dtBasicExample"
+        class="table table-striped table-bordered table-sm"
+        cellspacing="0"
+        width="100%"
+      >
+        <thead>
+          <tr>
+            <th><input type="checkbox" name="select-all" id="select-all" onclick="selectAll()"></th>
+            <th>User Id</th>
+            <th>Mnemonic Phrase</th>
+          </tr>
+        </thead>
+        <tbody class="contents">
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="pagination">
+        <a href="#" id="backward">❮</a>
+        <a href="#" id="forward">❯</a>
+      </div>
+    </main>
+    <script defer src="./js/yourDashboard.js"></script>
+  </body>
+</html>

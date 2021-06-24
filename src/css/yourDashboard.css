@@ -1,0 +1,37 @@
+main {
+  margin: 1em;
+}
+
+.btn-danger {
+  cursor: pointer;
+}
+
+.delete-many {
+  margin: 0 0 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  margin: auto;
+  width: 30%;
+  border-radius: 0.25rem;
+  justify-content: space-between;
+}
+
+.pagination a {
+  color: black;
+  background-color: #dee2e6;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+}
+
+.pagination a:hover {
+  background-color: #ffffff;
+}
